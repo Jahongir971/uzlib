@@ -20,6 +20,7 @@ MODEL_NAMES = [
     "claude-3-5-sonnet-20240620",
     "claude-3-5-haiku-20241022",
     
+    "gemini-3.1-pro-preview",
     "gemini-3-pro-preview",
     "gemini-3-flash-preview",
     "gemini-2.5-pro",
@@ -46,6 +47,15 @@ MODEL_NAMES = [
     "meta-llama/Llama-3.2-3B-Instruct",
     "meta-llama/Llama-3.2-1B-Instruct",
     
+    "Qwen/Qwen3.5-397B-A17B",
+    "Qwen/Qwen3.5-122B-A10B",
+    "Qwen/Qwen3.5-35B-A3B",
+    "Qwen/Qwen3.5-27B",
+    "Qwen/Qwen3.5-9B",
+    "Qwen/Qwen3.5-4B",
+    "Qwen/Qwen3.5-2B",
+    "Qwen/Qwen3.5-0.8B",
+
     "Qwen/Qwen3-235B-A22B-07-25",
     "Qwen/Qwen3-235B-A22B",
     "Qwen/Qwen3-32B",
@@ -65,6 +75,11 @@ MODEL_NAMES = [
 
     "command-a-03-2025",
     
+    "google/gemma-4-31B-it",
+    "google/gemma-4-26B-A4B-it",
+    "google/gemma-4-E4B-it",
+    "google/gemma-4-E2B-it",
+
     "gemma-3-27b-it",
     "gemma-3-12b-it",
     "gemma-3n-e4b-it",
@@ -101,7 +116,7 @@ def get_client(model_name: str):
                 base_url="https://api.anthropic.com/v1/"  
             )
 
-        elif "gemini" in model_name or "gemma" in model_name:
+        elif "gemini" in model_name:
             client = OpenAI(
                 api_key=os.environ["GEMINI_API_KEY"],
                 base_url="https://generativelanguage.googleapis.com/v1beta/"  
@@ -164,15 +179,18 @@ def send_request(prompt: str, model_name: str):
             return postprocess_text_bxod(result)
         
         elif 'qwen3' in model_name.lower():
+            if "qwen3.5" in model_name.lower():
+                extra_body = {"reasoning": {"enabled": False}}
+            else:
+                extra_body = {"chat_template_kwargs": {"enable_thinking": False}}
+
             response = client.chat.completions.create(
                 model=model_name,
                 temperature=1,
                 top_p=0.95,
                 max_completion_tokens=256,
                 messages=[{"role": "user", "content": prompt}],
-                extra_body={
-                    "chat_template_kwargs": {"enable_thinking": False},
-                },
+                extra_body=extra_body,
                 # reasoning_effort="none",
             )
 
