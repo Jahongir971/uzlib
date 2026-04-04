@@ -4,6 +4,7 @@
 |:--------------:|:----------------:|:-------:|:----------------:|:-----------:|:----------------------:|:-----------:|
 | [Gemini 3 Pro Preview](https://aistudio.google.com/prompts/new_chat?model=gemini-3-pro-preview) | Google | **0.8264** | **0.8215** | **0.8644** | **0.875** | **0.7308** |
 | [Gemini 3 Flash Preview](https://aistudio.google.com/prompts/new_chat?model=gemini-3-flash-preview) | Google | 0.7953 | 0.7941 | 0.8517 | 0.7083 | 0.6923 |
+| [Gemini 3.1 Pro Preview](https://aistudio.google.com/prompts/new_chat?model=gemini-3.1-pro-preview) | Google | 0.7818 | 0.7801 | 0.8263 | 0.6944 | 0.75 |
 | [Gemini 2.5 Pro](https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-pro) | Google | 0.6905 | 0.6795 | 0.7627 | 0.7778 | 0.5577 |
 | [GPT 5.2](https://platform.openai.com/playground/chat?models=gpt-5.2) | OpenAI | 0.662 | 0.6696 | 0.6314 | 0.7083 | 0.5192 |
 | [NeuronAI-o'zbek_tili(4B)](https://huggingface.co/NeuronUz/NeuronAI-Uzbek) | NeuronAI | 0.662 | 0.7182 | 0.4661 | 0.3333 | 0.3846 |
@@ -18,8 +19,10 @@
 | *Human voters＊* | - | *0.5894* | *0.6054* | *0.5247* | *0.5254* | *0.5094* |
 | [Gemini 2.0 Flash Lite](https://aistudio.google.com/prompts/new_chat?model=gemini-2.0-flash-lite-001) | Google | 0.5862 | 0.6036 | 0.5085 | 0.5833 | 0.4423 |
 | [Gemini 2.5 Flash Lite](https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-lite) | Google | 0.5723 | 0.5943 | 0.5042 | 0.5278 | 0.3077 |
+| [Gemma 4 31B](https://huggingface.co/google/gemma-4-31B-it) | Google | 0.5535 | 0.563 | 0.5042 | 0.5833 | 0.4615 |
 | [Llama 4 Scout](https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct) | Meta | 0.5519 | 0.5736 | 0.4703 | 0.5556 | 0.2885 |
 | [gpt-oss-120b](https://huggingface.co/openai/gpt-oss-120b) | OpenAI | 0.5492 | 0.5743 | 0.4576 | 0.3611 | 0.5 |
+| [Gemma 4 26B A4B](https://huggingface.co/google/gemma-4-26B-A4B-it) | Google | 0.5481 | 0.5683 | 0.4746 | 0.4444 | 0.4423 |
 | [DeepSeek-V3-0324](https://huggingface.co/deepseek-ai/DeepSeek-V3-0324) | DeepSeek | 0.5443 | 0.551 | 0.5212 | 0.5278 | 0.4808 |
 | [GPT 5 mini](https://platform.openai.com/playground/chat?models=gpt-5-mini) | OpenAI | 0.5293 | 0.5423 | 0.5 | 0.4861 | 0.3462 |
 | [GPT 4o mini](https://platform.openai.com/playground/chat?models=gpt-4o-mini-2024-07-18) | OpenAI | 0.5255 | 0.5410 | 0.4915 | 0.4306 | 0.3654 |
