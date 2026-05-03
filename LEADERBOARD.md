@@ -64,3 +64,4 @@
 | [Llama 3.2 1B](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct) | Meta | 0.2332 | 0.2285 | 0.25 | 0.25 | 0.2692 |
 
 * ＊ Human voters score is not the average of humans doing all the questions but the average of accuracy score for each question. Also, note that random baseline for humans is 0.4229 due to variable number of options (2-3) in the original questions.
+  | [UzMMAi-v0.1](https://huggingface.co/Alpaca34/UzMMAi-v0.1) | UzMMAi | 0.3955 | 0.4137 | 0.3220 | 0.3750 | 0.2308 |
