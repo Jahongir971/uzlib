@@ -61,7 +61,6 @@
 | [Llama 3.2 3B](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct) | Meta | 0.2671 | 0.2758 | 0.25 | 0.2083 | 0.1731 |
 | *Random Baseline* | - | *0.25* | *0.25* | *0.25* | *0.25* | *0.25* |
 | [Llama 3.2 1B Uz](https://huggingface.co/bxod/Llama-3.2-1B-Instruct-uz) | Bekhzod Shukhratov | 0.2456 | 0.2552 | 0.2288 | 0.1389 | 0.1923 |
-| [Llama 3.2 1B](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct) | Meta | 0.2332 | 0.2285 | 0.25 | 0.25 | 0.2692 |
-
+| [Llama 3.2 1B](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct) | Meta | 0.2332 | 0.2285 | 0.25 | 0.25 | 0.2692 
+| [UzMMAi-v0.1](https://huggingface.co/Alpaca34/UzMMAi-v0.1) | UzMMAi | 0.3955 | 0.4137 | 0.3220 | 0.3750 | 0.2308 |
 * ＊ Human voters score is not the average of humans doing all the questions but the average of accuracy score for each question. Also, note that random baseline for humans is 0.4229 due to variable number of options (2-3) in the original questions.
-  | [UzMMAi-v0.1](https://huggingface.co/Alpaca34/UzMMAi-v0.1) | UzMMAi | 0.3955 | 0.4137 | 0.3220 | 0.3750 | 0.2308 |
